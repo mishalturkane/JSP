@@ -87,26 +87,26 @@ protected void doGet(HttpServletRequest req,HttpServletResponse resp) throws Ser
 ![image](https://github.com/mishalturkane/JSP/assets/95625543/dac81033-8771-438f-865d-32df5c53a15b)
 
 # Life Cycle of JSP Page
-A JSP page is converted into a Servlet in order to service requests. 
+**A JSP page is converted into a Servlet in order to service requests.**
 
-The translation of a JSP page to a Servlet is called Lifecycle of JSP. 
+**The translation of a JSP page to a Servlet is called Lifecycle of JSP.**
 
-JSP Lifecycle is exactly same as the Servlet Lifecycle, with one additional first step, which is, translation of JSP code to Servlet code. 
+**JSP Lifecycle is exactly same as the Servlet Lifecycle, with one additional first step, which is, translation of JSP code to Servlet code.**
 
-Following are the JSP Lifecycle steps:
+# Following are the JSP Lifecycle steps:
 
-Translation of JSP to Servlet code.
+>Translation of JSP to Servlet code.
 
-Compilation of Servlet to bytecode.
+>Compilation of Servlet to bytecode.
 
-Loading Servlet class.
+>Loading Servlet class.
 
-Instantiating the servlet .
+>Instantiating the servlet .
 
-Initialization by calling jspInit() method
+>Initialization by calling jspInit() method
 
-Request Processing by calling _jspService() method
+>Request Processing by calling _jspService() method
 
-Destroying by calling jspDestroy() method
+>Destroying by calling jspDestroy() method
 
 
