@@ -128,7 +128,8 @@ protected void doGet(HttpServletRequest req,HttpServletResponse resp) throws Ser
 7.Destruction Phase: This phase comes when the container decides it no longer needs the servlet instance to service requests. It then calls jspdestroy() method and the servlet is ready for a garbage collection
 
 
-#How A JSP Page Is Processed By Container 
+# How A JSP Page Is Processed By Container 
 ![image](https://github.com/mishalturkane/JSP/assets/95625543/e14b3015-db10-47a1-8d70-c47e6cb36072)
 ![image](https://github.com/mishalturkane/JSP/assets/95625543/41cbfcff-7f89-4b34-8249-750ef92e3c67)
+
 
