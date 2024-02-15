@@ -108,5 +108,27 @@ protected void doGet(HttpServletRequest req,HttpServletResponse resp) throws Ser
 >Request Processing by calling _jspService() method
 
 >Destroying by calling jspDestroy() method
+# Phases
+1.Translation Phase:  -When first request  of a jsp page comes then  the container translates .jsp page into .java file 
+			Ex : showdate.jsp to showdate_jsp.java .
+   
+2.Compilation Phase : Immediately after translation the compilation of  servlet to produce .class file is done by the container .
 
+3.Loading Phase: As soon as the compilation is done , the .class file is loaded in server’s memory
+
+4.Instantiation Phase : Then the object of servlet is created 
+
+
+5.Initialization Phase  : Now the container calls the jspInit() method to initialize the servlet instance
+
+6.Request processing Phase : A new thread is then created, which invokes the_jspService() method, with  request (HttpServletRequest) and response (HttpServletRespnse) objects as parameters.
+**Now for every next request only the 6th step is executed . However if the jsp page is edited then again all the previous steps are repeated**
+
+
+7.Destruction Phase: This phase comes when the container decides it no longer needs the servlet instance to service requests. It then calls jspdestroy() method and the servlet is ready for a garbage collection
+
+
+#How A JSP Page Is Processed By Container 
+![image](https://github.com/mishalturkane/JSP/assets/95625543/e14b3015-db10-47a1-8d70-c47e6cb36072)
+![image](https://github.com/mishalturkane/JSP/assets/95625543/41cbfcff-7f89-4b34-8249-750ef92e3c67)
 
