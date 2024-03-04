@@ -1,0 +1,28 @@
+<web-app>
+	
+		
+
+
+	<servlet>
+		<servlet-class>LoginServlet2</servlet-class>
+		<servlet-name>LoginServlet2</servlet-name>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet2</servlet-name>
+		<url-pattern>/LoginServlet2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-class>RegistrationServlet2</servlet-class>
+		<servlet-name>RegistrationServlet2</servlet-name>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrationServlet2</servlet-name>
+		<url-pattern>/RegistrationServlet2</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
+	
+
